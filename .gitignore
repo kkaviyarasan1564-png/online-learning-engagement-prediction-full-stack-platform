@@ -1,5 +1,17 @@
+# Python
 .venv/
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 .ipynb_checkpoints/
+
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Environment & OS
+.env
 .DS_Store
+Thumbs.db

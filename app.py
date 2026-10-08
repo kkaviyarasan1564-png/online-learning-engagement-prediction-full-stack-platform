@@ -549,7 +549,7 @@ with tabs[1]:
                 
                 img_c1, img_c2 = st.columns([1, 1])
                 with img_c1:
-                    st.image(io.BytesIO(raw_bytes), caption=f"Uploaded Image: {uploaded_email_file.name}", use_column_width=True)
+                    st.image(io.BytesIO(raw_bytes), caption=f"Uploaded Image: {uploaded_email_file.name}", use_container_width=True)
                 with img_c2:
                     st.info(f"**Image Name:** `{uploaded_email_file.name}`\n\n**Format:** `{parsed.get('format', 'Image')}`\n\n**Resolution:** `{parsed.get('dimensions', 'N/A')}`")
                     st.text_area("Extracted Image Text Stream", value=parsed['body'][:400] + ("..." if len(parsed['body']) > 400 else ""), height=100, disabled=True)
